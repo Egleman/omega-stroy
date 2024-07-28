@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.future {
+  padding: 50px 0;
+}
+.future__top {
+  display: flex;
+  justify-content: center;
+}
+.future__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 42px;
+}
+.future__logo-image {
+  max-width: 200px;
+  width: 100%;
+}
+.future__logo-text {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+}
+.future__title {
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.future__wrapper {
+  display: flex;
+  gap: 40px;
+}
+.future__card {
+  box-sizing: border-box;
+  border: 1px solid #DCDCDC;
+  max-width: 448px;
+  width: 100%;
+}
+.future__card-image {
+  height: 252px;
+}
+.future__card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.future__card-body {
+  padding: 30px;
+}
+.future__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 21px;
+}
+.future__card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 140%;
+}
+.future__card-item svg {
+  width: 18px;
+}
+.future__card-links {
+  display: flex;
+  gap: 16px;
+}
+.future__card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+}
+.future__map {
+  width: 100%;
+}
+
+@media (max-width: 1022px) {
+  .future__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .future__map {
+    height: 300px;
+  }
+}
+@media (max-width: 798px) {
+  .future__title {
+    font-size: 35px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 606px) {
+  .future__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .future__title {
+    font-size: 25px;
+  }
+  .future__card-body {
+    padding: 20px;
+  }
+}
+*:active, *:focus, *:focus-within, *:target, *:hover, *:visited, *:focus-visible {
+  outline: none !important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  position: relative;
+  color: #000;
+  min-width: 303px;
+  font-size: 18px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+b {
+  font-weight: 700;
+}
+
+q::before {
+  content: open-quote;
+}
+
+q::after {
+  content: close-quote;
+}
+
+q {
+  quotes: "«" "»";
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+.future {
+    padding: 50px 0;
+    &__top {
+        display: flex;
+        justify-content: center;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 42px;
+        &-image {
+            max-width: 200px;
+            width: 100%;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            display: flex;
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+    &__title {
+        font-size: 54px;
+        line-height: 63px;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 40px;
+    }
+    &__card {
+        box-sizing: border-box;
+        border: 1px solid #DCDCDC;
+        max-width: 448px;
+        width: 100%;
+        &-image {
+            height: 252px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-body {
+            padding: 30px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 21px;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            line-height: 140%;
+            svg {
+                width: 18px;
+            }
+        }
+        &-links {
+            display: flex;
+            gap: 16px;
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            width: 44px;
+            height: 44px;
+            border: 1px solid #DCDCDC;
+            box-sizing: border-box;
+        }
+    }
+    &__map {
+        width: 100%;
+    }
+}
+@media (max-width: 1022px) {
+    .future {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__map {
+            height: 300px;
+        }
+    }
+}
+@media (max-width: 798px) {
+    .future {
+        &__title {
+            font-size: 35px;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 606px) {
+    .future {
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .future {
+        &__title {
+            font-size: 25px;
+        }
+        &__card {
+            &-body {
+                padding: 20px;
+            }
+        }
+    }
+}
